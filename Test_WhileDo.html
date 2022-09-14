@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i = 0;
+    let text = "";
+    //thiếu "" biến text sẽ bị undefined
+    console.log(typeof text)
+    while (i < 10) {
+        i++;
+        if (i === 3) {
+            continue;
+        }
+        //continue bỏ qua 1 TH
+        text += "The number is" + i + "<br>";
+    }
+    document.write(text)
+
+    //Do_While
+
+    let j = 0
+    let text2 = ""
+    let Alphabet = ["a", "b", "c", "d", "e", "f", "g", "h"]
+    let len = Alphabet.length
+    do {
+        if (j === 4) {
+            j++
+            continue;
+        }
+        // tại trước continue phải xác định được biến j
+        text2 += "letter of the Alphabet is " + Alphabet[j] + "<br>"
+        j++
+        //break ngắt tại TH thỏa đk
+    }
+    while (j <= len)
+    document.write(text2)
+</script>
+</body>
+</html>
